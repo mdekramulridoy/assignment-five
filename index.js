@@ -17,7 +17,7 @@ document
     const balanceNoakhali = parseFloat(noakhaliBalance);
     if (inputNoakhali === "") {
       alert(
-        "The donation amount field is empty. Please enter a donation amount."
+        "The donation amount field is empty or Invalid. Please enter a valid amount."
       );
       return;
     }
@@ -49,7 +49,7 @@ document.getElementById("feni-donate").addEventListener("click", function () {
   const balanceFeni = parseFloat(feniBalance);
   if (inputFeni === "") {
     alert(
-      "The donation amount field is empty. Please enter a donation amount."
+      "The donation amount field is empty or Invalid. Please enter a valid amount."
     );
     return;
   }
@@ -82,7 +82,7 @@ document.getElementById("quota-donate").addEventListener("click", function () {
 
   if (inputQuota === "") {
     alert(
-      "The donation amount field is empty. Please enter a donation amount."
+      "The donation amount field is empty or Invalid. Please enter a valid amount."
     );
     return;
   }
