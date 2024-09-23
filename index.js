@@ -15,14 +15,16 @@ document
 
     const noakhaliInput = parseFloat(inputNoakhali);
     const balanceNoakhali = parseFloat(noakhaliBalance);
-    if(inputNoakhali === ""){
-        alert("The donation amount field is empty. Please enter a donation amount.");
-        return;
-      }
-      if (isNaN(noakhaliInput) || noakhaliInput <= 0) {
-        alert("Please enter a valid number for the donation amount.");
-        return;
-      }
+    if (inputNoakhali === "") {
+      alert(
+        "The donation amount field is empty. Please enter a donation amount."
+      );
+      return;
+    }
+    if (isNaN(noakhaliInput) || noakhaliInput <= 0) {
+      alert("Please enter a valid number for the donation amount.");
+      return;
+    }
     //   if (feniInput > totalBalance) {
     //     alert("The donation amount exceeds your account balance.");
     //     return;
@@ -45,23 +47,25 @@ document.getElementById("feni-donate").addEventListener("click", function () {
 
   const feniInput = parseFloat(inputFeni);
   const balanceFeni = parseFloat(feniBalance);
-  if(inputFeni === ""){
-    alert("The donation amount field is empty. Please enter a donation amount.");
+  if (inputFeni === "") {
+    alert(
+      "The donation amount field is empty. Please enter a donation amount."
+    );
     return;
   }
   if (isNaN(feniInput) || feniInput <= 0) {
     alert("Please enter a valid number for the donation amount.");
     return;
   }
-//   if (feniInput > totalBalance) {
-//     alert("The donation amount exceeds your account balance.");
-//     return;
-//   }
+  //   if (feniInput > totalBalance) {
+  //     alert("The donation amount exceeds your account balance.");
+  //     return;
+  //   }
 
   function add(a, b) {
-      return a + b;
-    }
-    const newBalanceFeni = add(feniInput, balanceFeni);
+    return a + b;
+  }
+  const newBalanceFeni = add(feniInput, balanceFeni);
   document.getElementById("card-balance-feni").innerText = newBalanceFeni;
 });
 
@@ -84,18 +88,20 @@ document.getElementById("quota-donate").addEventListener("click", function () {
   const quotaInput = parseFloat(inputQuota);
   const balanceQuota = parseFloat(quotaBalance);
 
-  if(inputQuota === ""){
-    alert("The donation amount field is empty. Please enter a donation amount.");
+  if (inputQuota === "") {
+    alert(
+      "The donation amount field is empty. Please enter a donation amount."
+    );
     return;
   }
   if (isNaN(quotaInput) || quotaInput <= 0) {
     alert("Please enter a valid number for the donation amount.");
     return;
   }
-//   if (feniInput > totalBalance) {
-//     alert("The donation amount exceeds your account balance.");
-//     return;
-//   }
+  //   if (feniInput > totalBalance) {
+  //     alert("The donation amount exceeds your account balance.");
+  //     return;
+  //   }
 
   function add(a, b) {
     return a + b;
