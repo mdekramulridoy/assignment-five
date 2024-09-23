@@ -25,10 +25,10 @@ document
       alert("Please enter a valid number for the donation amount.");
       return;
     }
-    //   if (feniInput > totalBalance) {
-    //     alert("The donation amount exceeds your account balance.");
-    //     return;
-    //   }
+    //   if (totalBalance <= 0) {
+  //     alert("Insufficient Balance.");
+  //     return;
+  //   }
 
     function add(a, b) {
       return a + b;
@@ -57,8 +57,8 @@ document.getElementById("feni-donate").addEventListener("click", function () {
     alert("Please enter a valid number for the donation amount.");
     return;
   }
-  //   if (feniInput > totalBalance) {
-  //     alert("The donation amount exceeds your account balance.");
+  //   if (totalBalance <= 0) {
+  //     alert("Insufficient Balance.");
   //     return;
   //   }
 
@@ -69,15 +69,7 @@ document.getElementById("feni-donate").addEventListener("click", function () {
   document.getElementById("card-balance-feni").innerText = newBalanceFeni;
 });
 
-//   if (
-//     newBalanceFeni > totalBalance ||
-//     newBalanceFeni <= 0 ||
-//     newBalanceFeni === "" ||
-//     isNaN(newBalanceFeni)
-//   ) {
-//     alert("Input a valid Number");
-//     return;
-//   }
+
 
 // Quota Start
 
@@ -98,8 +90,8 @@ document.getElementById("quota-donate").addEventListener("click", function () {
     alert("Please enter a valid number for the donation amount.");
     return;
   }
-  //   if (feniInput > totalBalance) {
-  //     alert("The donation amount exceeds your account balance.");
+  //   if (totalBalance <= 0) {
+  //     alert("Insufficient Balance.");
   //     return;
   //   }
 
