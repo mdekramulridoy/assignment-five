@@ -2,27 +2,52 @@
     background-color: white;
     color: black;
 } */
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.cdnfonts.com/css/lexend-deca");
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+.blog-btn {
+  background-color: rgb(180, 244, 97);
+  border-radius: 8px;
+  padding: 12px 32px 12px 32px;
+}
+.up-header {
+  background-color: #f9f7f3;
+}
 
-@import url('https://fonts.cdnfonts.com/css/lexend-deca');
-body{
-    font-family: 'Lexend Deca', sans-serif;
+.donation-btn {
+  background-color: rgb(180, 244, 97);
+  border-radius: 8px;
+  padding: 12px 32px 12px 32px;
 }
-.blog-btn{
-    background-color: rgb(180, 244, 97);
-    border-radius: 8px;
-    padding: 12px 32px 12px 32px;
-}
-.up-header{
-    background-color: rgb(249, 247, 243);
+.history-btn {
+  border-radius: 8px;
+  border: 2px solid rgba(17, 17, 17, 0.08);
+  padding: 12px 32px 12px 32px;
 }
 
-.donation-btn{
-    background-color: rgb(180, 244, 97);
-    border-radius: 8px;
-    padding: 12px 32px 12px 32px;
+.header-section {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.288);
+  backdrop-filter: blur(10px);
 }
-.history-btn{
-    border-radius: 8px;
-    border: 1px solid rgba(17, 17, 17, 0.3);
-    padding: 12px 32px 12px 32px;
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.btn-balance {
+  flex-direction: row;
+}
+
+.input-amount {
+  border: 2px solid rgba(17, 17, 17, 0.08);
+}
+.donate-now-button {
+  background-color: rgb(180, 244, 97);
 }
