@@ -13,7 +13,6 @@ blogHtmlMove.addEventListener("click", function () {
     window.location.href = "index.html";
   }
 });
-
 // const homeClick = document.getElementById("donate-button-history");
 // homeClick.addEventListener("click", function () {
 //   window.location.href = "index.html";
