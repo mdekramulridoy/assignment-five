@@ -2,8 +2,29 @@ document
   .getElementById("history-button-home")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "history.html";
   });
+//
+
+function toggleButton(buttonNumber) {
+  const button1 = document.getElementById("donate-button-home");
+  const button2 = document.getElementById("history-button-home");
+  const section1 = document.getElementById("donation-div");
+  const section2 = document.getElementById("history-div");
+
+  if (buttonNumber === 1) {
+    button1.classList.add("active");
+    button2.classList.remove("active");
+    section1.style.display = "block";
+    section2.style.display = "none";
+  } else if (buttonNumber === 2) {
+    button1.classList.remove("active");
+    button2.classList.add("active");
+    section1.style.display = "none";
+    section2.style.display = "block";
+  }
+}
+
+//
 
 document
   .getElementById("noakhali-donate")
@@ -52,18 +73,8 @@ document
     }
     const lastBalance = remove(totalTopBalance, inputNoakhaillaNumber);
     document.getElementById("total-balance").innerText = lastBalance;
-
     const myModal = document.getElementById("my_modal_5");
     myModal.showModal();
-
-    // const callModal = document.querySelectorAll('modal-show');
-    // const myModal = document.getElementById('my_modal_5');
-
-    // for (const modalCall of donationModal){
-    //   button.addEventListener('click', function(){
-    //     myModal.showModal();
-    //   });
-    // }
   });
 
 // Feni Balance Start
@@ -106,7 +117,7 @@ document.getElementById("feni-donate").addEventListener("click", function () {
   document.getElementById("total-balance").innerText = lastBalance;
 
   const myModal = document.getElementById("my_modal_5");
-    myModal.showModal();
+  myModal.showModal();
 });
 
 // Quota Start
@@ -150,5 +161,5 @@ document.getElementById("quota-donate").addEventListener("click", function () {
   document.getElementById("total-balance").innerText = lastBalance;
 
   const myModal = document.getElementById("my_modal_5");
-    myModal.showModal();
+  myModal.showModal();
 });

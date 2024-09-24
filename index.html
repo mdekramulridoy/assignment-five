@@ -37,182 +37,187 @@
         <!-- Upper navbar End -->
         <!-- Lower div Start -->
         <div class="below-header flex justify-center pb-6 pt-14 gap-6">
-          <button id="donate-button-home" class="donation-btn">Donation</button>
-          <button id="history-button-home" class="history-btn">History</button>
+          <button id="donate-button-home" class="donation-btn active" onclick="toggleButton(1)">Donation</button>
+          <button id="history-button-home" class="history-btn" onclick="toggleButton(2)">History</button>
         </div>
         <!-- Lower div End -->
       </section>
     </header>
     <!-- Header End -->
     <!-- Main start -->
-    <main class="main-part mx-32 flex flex-col gap-6 pt-72 pb-20">
-      <div class="card flex flex-row p-6 gap-5">
-        <div class="w-1/2">
-          <img
-            class="w-full h-full object-cover rounded-md"
-            src="images/noakhali.png"
-            alt="Noakhali Flood Donation Camping"
-          />
-        </div>
-        <div class="card-right flex flex-col w-1/2 gap-3">
-          <div class="flex flex-col h-full card-justify-between">
-            <div class="flex flex-col gap-6">
-              <div
-                class="btn-balance gap-1 flex p-2 items-center bg-slate-100 rounded-md w-32 justify-center"
-              >
-                <img src="images/coin.png" alt="" />
-                <div id="card-balance-noakhali">0</div>
-                <div>BDT</div>
+    <main>
+      <div id="donation-div" class="main-part mx-32 flex flex-col gap-6 pt-72 pb-20">
+        <div class="card flex flex-row p-6 gap-5">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full object-cover rounded-md"
+              src="images/noakhali.png"
+              alt="Noakhali Flood Donation Camping"
+            />
+          </div>
+          <div class="card-right flex flex-col w-1/2 gap-3">
+            <div class="flex flex-col h-full card-justify-between">
+              <div class="flex flex-col gap-6">
+                <div
+                  class="btn-balance gap-1 flex p-2 items-center bg-slate-100 rounded-md w-32 justify-center"
+                >
+                  <img src="images/coin.png" alt="" />
+                  <div id="card-balance-noakhali">0</div>
+                  <div>BDT</div>
+                </div>
+                <h1 class="font-bold">
+                  Donate for Flood of Noakhali, Bnagladesh
+                </h1>
+                <p>
+                  The recent floods in Noakhali have caused significant damage to
+                  homes infrastructure.Noakhali, a coastal district in
+                  southeastern Bangladesh, has been facing severe floods due to
+                  heavy rainfall and tidal surges. The rising water levels have
+                  submerged homes, damaged crops, and disrupted transportation,
+                  leaving many people stranded. Thousands of families have been
+                  displaced, seeking refuge in temporary shelters. The flooding
+                  has also led to a shortage of clean drinking water and essential
+                  supplies.The flooding in Noakhali has had a devastating impact
+                  on livelihoods, particularly for farmers and fishermen.
+                  Farmlands have been inundated, destroying rice paddies and other
+                  crops, which are vital for the local economy. Many fishermen are
+                  unable to go to sea, further worsening the financial hardships
+                  of coastal communities. Schools and healthcare facilities have
+                  also been affected, with many turning into makeshift shelters
+                  for displaced families.
+                </p>
               </div>
-              <h1 class="font-bold">
-                Donate for Flood of Noakhali, Bnagladesh
-              </h1>
-              <p>
-                The recent floods in Noakhali have caused significant damage to
-                homes infrastructure.Noakhali, a coastal district in
-                southeastern Bangladesh, has been facing severe floods due to
-                heavy rainfall and tidal surges. The rising water levels have
-                submerged homes, damaged crops, and disrupted transportation,
-                leaving many people stranded. Thousands of families have been
-                displaced, seeking refuge in temporary shelters. The flooding
-                has also led to a shortage of clean drinking water and essential
-                supplies.The flooding in Noakhali has had a devastating impact
-                on livelihoods, particularly for farmers and fishermen.
-                Farmlands have been inundated, destroying rice paddies and other
-                crops, which are vital for the local economy. Many fishermen are
-                unable to go to sea, further worsening the financial hardships
-                of coastal communities. Schools and healthcare facilities have
-                also been affected, with many turning into makeshift shelters
-                for displaced families.
-              </p>
+              <div class="flex flex-col gap-3">
+                <input
+                  type="number"
+                  name=""
+                  id="input-noakhali"
+                  class="input-amount rounded-md p-2"
+                  placeholder="Write Donation Amount"
+                />
+                <button
+                  id="noakhali-donate"
+                  class="donate-now-button p-3 rounded-md font-bold"
+                >
+                  Donate Now
+                </button>
+              </div>
             </div>
-            <div class="flex flex-col gap-3">
-              <input
-                type="number"
-                name=""
-                id="input-noakhali"
-                class="input-amount rounded-md p-2"
-                placeholder="Write Donation Amount"
-              />
-              <button
-                id="noakhali-donate"
-                class="donate-now-button p-3 rounded-md font-bold"
-              >
-                Donate Now
-              </button>
+          </div>
+        </div>
+        <div class="card flex flex-row p-6 gap-5">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full object-cover rounded-md"
+              src="images/feni.png"
+              alt="Noakhali Flood Donation Camping"
+            />
+          </div>
+          <div class="card-right flex flex-col w-1/2 gap-3">
+            <div class="flex flex-col h-full card-justify-between">
+              <div class="flex flex-col gap-6">
+                <div
+                  class="btn-balance gap-1 flex p-2 items-center bg-slate-100 rounded-md w-32 justify-center"
+                >
+                  <img src="images/coin.png" alt="" />
+                  <div id="card-balance-feni">600</div>
+                  <div>BDT</div>
+                </div>
+                <h1 class="font-bold">
+                  Donate for Flood Relief in Feni, Bnagladesh
+                </h1>
+                <p>
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption and loss. Your generous donation
+                  will help provide immediate aid, including food, clean water,
+                  and medical supplies, to those affected by this calamity.
+                  Together, we can offer crucial support and help rebuild lives in
+                  the aftermath of this disaster. Every contribution counts
+                  towards making a real difference. Please consider donating today
+                  to assist those in urgent need.Feni, a district in southeastern
+                  Bangladesh, has been severely affected by flooding due to
+                  continuous heavy rains and water surges from upstream rivers.
+                  Thousands of families have been displaced as floodwaters
+                  inundated homes, farmlands, and infrastructure, causing
+                  significant agricultural losses.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <input
+                  type="number"
+                  name=""
+                  id="input-feni"
+                  class="input-amount rounded-md p-2"
+                  placeholder="Write Donation Amount"
+                />
+                <button
+                  id="feni-donate"
+                  class="donate-now-button p-3 rounded-md font-bold"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card flex flex-row p-6 gap-5">
+          <div class="w-1/2">
+            <img
+              class="w-full h-full object-cover rounded-md"
+              src="images/quota-protest.png"
+              alt="Noakhali Flood Donation Camping"
+            />
+          </div>
+          <div class="card-right flex flex-col w-1/2 gap-3">
+            <div class="flex flex-col h-full card-justify-between">
+              <div class="flex flex-col gap-6">
+                <div
+                  class="btn-balance gap-1 flex p-2 items-center bg-slate-100 rounded-md w-32 justify-center"
+                >
+                  <img src="images/coin.png" alt="" />
+                  <div id="card-balance-quota">2400</div>
+                  <div>BDT</div>
+                </div>
+                <h1 class="font-bold">Aid for Injured in the Quota Movement</h1>
+                <p>
+                  The recent Quota movement has resulted in numerous injuries and
+                  significant hardship for many individuals. Your support is
+                  crucial in providing medical assistance, rehabilitation, and
+                  necessary supplies to those affected. By contributing, you help
+                  ensure that injured individuals receive the care and support
+                  they need during this challenging time.The Quota Reform Movement
+                  in Bangladesh, which began in 2018, was marked by widespread
+                  protests from university students and job seekers demanding
+                  changes to the government’s job quota system. During the height
+                  of the protests, tensions escalated as clashes between
+                  protestors and law enforcement became frequent, leading to
+                  numerous injuries. Many of the injured were students who had
+                  peacefully gathered but became caught in the violence when
+                  police used tear gas, water cannons, and batons to disperse the
+                  crowds.
+                </p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <input
+                  type="number"
+                  name=""
+                  id="input-quota"
+                  class="input-amount rounded-md p-2"
+                  placeholder="Write Donation Amount"
+                />
+                <button
+                  id="quota-donate"
+                  class="donate-now-button p-3 rounded-md font-bold modal-show"
+                >
+                  Donate Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="card flex flex-row p-6 gap-5">
-        <div class="w-1/2">
-          <img
-            class="w-full h-full object-cover rounded-md"
-            src="images/feni.png"
-            alt="Noakhali Flood Donation Camping"
-          />
-        </div>
-        <div class="card-right flex flex-col w-1/2 gap-3">
-          <div class="flex flex-col h-full card-justify-between">
-            <div class="flex flex-col gap-6">
-              <div
-                class="btn-balance gap-1 flex p-2 items-center bg-slate-100 rounded-md w-32 justify-center"
-              >
-                <img src="images/coin.png" alt="" />
-                <div id="card-balance-feni">600</div>
-                <div>BDT</div>
-              </div>
-              <h1 class="font-bold">
-                Donate for Flood Relief in Feni, Bnagladesh
-              </h1>
-              <p>
-                The recent floods in Feni have devastated local communities,
-                leading to severe disruption and loss. Your generous donation
-                will help provide immediate aid, including food, clean water,
-                and medical supplies, to those affected by this calamity.
-                Together, we can offer crucial support and help rebuild lives in
-                the aftermath of this disaster. Every contribution counts
-                towards making a real difference. Please consider donating today
-                to assist those in urgent need.Feni, a district in southeastern
-                Bangladesh, has been severely affected by flooding due to
-                continuous heavy rains and water surges from upstream rivers.
-                Thousands of families have been displaced as floodwaters
-                inundated homes, farmlands, and infrastructure, causing
-                significant agricultural losses.
-              </p>
-            </div>
-            <div class="flex flex-col gap-3">
-              <input
-                type="number"
-                name=""
-                id="input-feni"
-                class="input-amount rounded-md p-2"
-                placeholder="Write Donation Amount"
-              />
-              <button
-                id="feni-donate"
-                class="donate-now-button p-3 rounded-md font-bold"
-              >
-                Donate Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card flex flex-row p-6 gap-5">
-        <div class="w-1/2">
-          <img
-            class="w-full h-full object-cover rounded-md"
-            src="images/quota-protest.png"
-            alt="Noakhali Flood Donation Camping"
-          />
-        </div>
-        <div class="card-right flex flex-col w-1/2 gap-3">
-          <div class="flex flex-col h-full card-justify-between">
-            <div class="flex flex-col gap-6">
-              <div
-                class="btn-balance gap-1 flex p-2 items-center bg-slate-100 rounded-md w-32 justify-center"
-              >
-                <img src="images/coin.png" alt="" />
-                <div id="card-balance-quota">2400</div>
-                <div>BDT</div>
-              </div>
-              <h1 class="font-bold">Aid for Injured in the Quota Movement</h1>
-              <p>
-                The recent Quota movement has resulted in numerous injuries and
-                significant hardship for many individuals. Your support is
-                crucial in providing medical assistance, rehabilitation, and
-                necessary supplies to those affected. By contributing, you help
-                ensure that injured individuals receive the care and support
-                they need during this challenging time.The Quota Reform Movement
-                in Bangladesh, which began in 2018, was marked by widespread
-                protests from university students and job seekers demanding
-                changes to the government’s job quota system. During the height
-                of the protests, tensions escalated as clashes between
-                protestors and law enforcement became frequent, leading to
-                numerous injuries. Many of the injured were students who had
-                peacefully gathered but became caught in the violence when
-                police used tear gas, water cannons, and batons to disperse the
-                crowds.
-              </p>
-            </div>
-            <div class="flex flex-col gap-3">
-              <input
-                type="number"
-                name=""
-                id="input-quota"
-                class="input-amount rounded-md p-2"
-                placeholder="Write Donation Amount"
-              />
-              <button
-                id="quota-donate"
-                class="donate-now-button p-3 rounded-md font-bold modal-show"
-              >
-                Donate Now
-              </button>
-            </div>
-          </div>
-        </div>
+      <div id="history-div" class="history-part mx-32 flex flex-col gap-6 pt-72 pb-20" style="display: none;">
+        <h1>History</h1>
       </div>
     </main>
     <!-- Main End -->
@@ -242,7 +247,6 @@
     <!-- Footer End -->
     <script src="others.js"></script>
     <script src="index.js"></script>
-    <script src="history.js"></script>
     <script src="vlog.js"></script>
   </body>
 </html>

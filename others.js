@@ -9,6 +9,7 @@ blogHtmlMove.addEventListener("click", function () {
   }
 });
 
+
 // Modal showing JavaScript
 
 // document.getElementById("").addEventListener("click", function () {
@@ -38,3 +39,37 @@ blogHtmlMove.addEventListener("click", function () {
 
 
 //     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // const now = new Date();
+    // const dateStr = now.toLocaleString("en-GB", {
+    //     weekday: "short", year: "numeric", month: "short", day: "numeric",
+    //     hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short"
+    // });
+    // const historySection = document.getElementById("donation-history");
+    // const newCard = document.createElement("div");
+    // newCard.classList.add("card", "border", "border-gray-300", "shadow-md", "rounded-lg", "p-5");
+    // newCard.innerHTML = `
+    //   <h3 class="text-xl font-bold mb-2">${noakhaliInput} Taka is Donated for Noakhali</h3>
+    //   <p>Date: ${dateStr}</p>
+    // `;
+    // historySection.appendChild(newCard);
+
+
+
+

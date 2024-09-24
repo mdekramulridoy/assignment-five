@@ -20,8 +20,9 @@ body {
 }
 
 .donation-btn {
-  background-color: rgb(180, 244, 97);
+  /* background-color: rgb(180, 244, 97); */
   border-radius: 8px;
+  border: 2px solid rgba(17, 17, 17, 0.08);
   padding: 12px 32px 12px 32px;
 }
 .history-btn {
@@ -39,6 +40,14 @@ body {
 .donation-btn:hover , .history-btn:hover , .blog-btn:hover , .modal-btn:hover {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
+
+
+/*  */
+.active {
+  background-color: rgb(180, 244, 97);
+}
+/*  */
+
 
 .card-justify-between{
   justify-content: space-between;
