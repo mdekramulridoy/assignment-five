@@ -30,7 +30,13 @@ body {
   padding: 12px 32px 12px 32px;
 }
 
-.donation-btn:hover , .history-btn:hover , .blog-btn:hover {
+.modal-btn{
+  padding: 15px;
+  background-color: #f9f7f3;
+  border-radius: 8px;
+}
+
+.donation-btn:hover , .history-btn:hover , .blog-btn:hover , .modal-btn:hover {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
 

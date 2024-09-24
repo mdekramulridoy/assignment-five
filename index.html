@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link href="https://fonts.cdnfonts.com/css/lexend-deca" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -93,7 +94,10 @@
                 class="input-amount rounded-md p-2"
                 placeholder="Write Donation Amount"
               />
-              <button id="noakhali-donate" class="donate-now-button p-3 rounded-md font-bold">
+              <button
+                id="noakhali-donate"
+                class="donate-now-button p-3 rounded-md font-bold"
+              >
                 Donate Now
               </button>
             </div>
@@ -122,7 +126,19 @@
                 Donate for Flood Relief in Feni, Bnagladesh
               </h1>
               <p>
-                The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.Feni, a district in southeastern Bangladesh, has been severely affected by flooding due to continuous heavy rains and water surges from upstream rivers. Thousands of families have been displaced as floodwaters inundated homes, farmlands, and infrastructure, causing significant agricultural losses.
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster. Every contribution counts
+                towards making a real difference. Please consider donating today
+                to assist those in urgent need.Feni, a district in southeastern
+                Bangladesh, has been severely affected by flooding due to
+                continuous heavy rains and water surges from upstream rivers.
+                Thousands of families have been displaced as floodwaters
+                inundated homes, farmlands, and infrastructure, causing
+                significant agricultural losses.
               </p>
             </div>
             <div class="flex flex-col gap-3">
@@ -133,7 +149,10 @@
                 class="input-amount rounded-md p-2"
                 placeholder="Write Donation Amount"
               />
-              <button id="feni-donate" class="donate-now-button p-3 rounded-md font-bold">
+              <button
+                id="feni-donate"
+                class="donate-now-button p-3 rounded-md font-bold"
+              >
                 Donate Now
               </button>
             </div>
@@ -158,11 +177,23 @@
                 <div id="card-balance-quota">2400</div>
                 <div>BDT</div>
               </div>
-              <h1 class="font-bold">
-                Aid for Injured in the Quota Movement
-              </h1>
+              <h1 class="font-bold">Aid for Injured in the Quota Movement</h1>
               <p>
-                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time.The Quota Reform Movement in Bangladesh, which began in 2018, was marked by widespread protests from university students and job seekers demanding changes to the government’s job quota system. During the height of the protests, tensions escalated as clashes between protestors and law enforcement became frequent, leading to numerous injuries. Many of the injured were students who had peacefully gathered but became caught in the violence when police used tear gas, water cannons, and batons to disperse the crowds.
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during this challenging time.The Quota Reform Movement
+                in Bangladesh, which began in 2018, was marked by widespread
+                protests from university students and job seekers demanding
+                changes to the government’s job quota system. During the height
+                of the protests, tensions escalated as clashes between
+                protestors and law enforcement became frequent, leading to
+                numerous injuries. Many of the injured were students who had
+                peacefully gathered but became caught in the violence when
+                police used tear gas, water cannons, and batons to disperse the
+                crowds.
               </p>
             </div>
             <div class="flex flex-col gap-3">
@@ -173,17 +204,39 @@
                 class="input-amount rounded-md p-2"
                 placeholder="Write Donation Amount"
               />
-              <button id="quota-donate" class="donate-now-button p-3 rounded-md font-bold">
+              <button
+                id="quota-donate"
+                class="donate-now-button p-3 rounded-md font-bold modal-show"
+              >
                 Donate Now
               </button>
             </div>
           </div>
         </div>
       </div>
-     
     </main>
     <!-- Main End -->
+    <!-- Modal Start -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <!-- <div  onclick="my_modal_5.showModal()">
 
+     
+
+   // </div> -->
+   <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box flex flex-col items-center gap-3">
+      <h1 class="flex justify-center font-extrabold text-4xl">Congrates!</h1>
+      <img class="coin w-1/6" src="images/coin.png" alt="" />
+      <p class="py-4">You Have Donated for Humankind</p>
+      <h1 class="font-extrabold text-2xl">Successfully</h1>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="modal-btn">close confirmation</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+    <!-- Modal End -->
     <!-- Footer Start -->
     <footer class="footer-part h-64 bg-[#f9f7f3]"></footer>
     <!-- Footer End -->
