@@ -31,16 +31,18 @@ body {
   padding: 12px 32px 12px 32px;
 }
 
-.modal-btn{
+.modal-btn {
   padding: 15px;
   background-color: #f9f7f3;
   border-radius: 8px;
 }
 
-.donation-btn:hover , .history-btn:hover , .blog-btn:hover , .modal-btn:hover {
+.donation-btn:hover,
+.history-btn:hover,
+.blog-btn:hover,
+.modal-btn:hover {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
-
 
 /*  */
 .active {
@@ -48,8 +50,7 @@ body {
 }
 /*  */
 
-
-.card-justify-between{
+.card-justify-between {
   justify-content: space-between;
 }
 .header-section {
@@ -62,6 +63,7 @@ body {
 }
 .card {
   border: 2px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
 }
 .btn-balance {
   flex-direction: row;

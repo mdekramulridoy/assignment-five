@@ -75,6 +75,32 @@ document
     document.getElementById("total-balance").innerText = lastBalance;
     const myModal = document.getElementById("my_modal_5");
     myModal.showModal();
+
+
+
+
+
+// 
+     const now = new Date();
+    const dateStr = now.toLocaleString("en-GB", {
+        weekday: "short", year: "numeric", month: "short", day: "numeric",
+        hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short"
+    });
+    const historySection = document.getElementById("history-noakhali");
+    const newCard = document.createElement("div");
+    newCard.classList.add("card", "border", "border-gray-300", "shadow-md", "rounded-lg", "p-5");
+    newCard.innerHTML = `
+      <h3 class="text-xl font-bold mb-2">${noakhaliInput} Taka is Donated for Noakhali</h3>
+      <p>Date: ${dateStr}</p>
+    `;
+    historySection.appendChild(newCard);
+// 
+
+
+
+
+
+
   });
 
 // Feni Balance Start
@@ -118,6 +144,28 @@ document.getElementById("feni-donate").addEventListener("click", function () {
 
   const myModal = document.getElementById("my_modal_5");
   myModal.showModal();
+
+
+// 
+  // 
+  const now = new Date();
+  const dateStr = now.toLocaleString("en-GB", {
+      weekday: "short", year: "numeric", month: "short", day: "numeric",
+      hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short"
+  });
+  const historySection = document.getElementById("history-feni");
+  const newCard = document.createElement("div");
+  newCard.classList.add("card", "border", "border-gray-300", "shadow-md", "rounded-lg", "p-5");
+  newCard.innerHTML = `
+    <h3 class="text-xl font-bold mb-2">${feniInput} Taka is Donated for Feni</h3>
+    <p>Date: ${dateStr}</p>
+  `;
+  historySection.appendChild(newCard);
+// 
+// 
+
+
+
 });
 
 // Quota Start
@@ -162,4 +210,25 @@ document.getElementById("quota-donate").addEventListener("click", function () {
 
   const myModal = document.getElementById("my_modal_5");
   myModal.showModal();
+
+
+// 
+const now = new Date();
+  const dateStr = now.toLocaleString("en-GB", {
+      weekday: "short", year: "numeric", month: "short", day: "numeric",
+      hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short"
+  });
+  const historySection = document.getElementById("history-quota");
+  const newCard = document.createElement("div");
+  newCard.classList.add("card", "border", "border-gray-300", "shadow-md", "rounded-lg", "p-5");
+  newCard.innerHTML = `
+    <h3 class="text-xl font-bold mb-2">${quotaInput} Taka is Donated for Quota</h3>
+    <p>Date: ${dateStr}</p>
+  `;
+  historySection.appendChild(newCard);
+// 
+
+
+
+
 });
