@@ -104,6 +104,8 @@ document
       <p>Date: ${dateStr}</p>
     `;
     historySection.appendChild(newCard);
+
+    document.getElementById("input-noakhali").value = "";
     //
   });
 
@@ -177,6 +179,7 @@ document.getElementById("feni-donate").addEventListener("click", function () {
     <p>Date: ${dateStr}</p>
   `;
   historySection.appendChild(newCard);
+  document.getElementById("input-feni").value = "";
   //
   //
 });
@@ -251,5 +254,6 @@ document.getElementById("quota-donate").addEventListener("click", function () {
     <p>Date: ${dateStr}</p>
   `;
   historySection.appendChild(newCard);
+  document.getElementById("input-quota").value = "";
   //
 });
