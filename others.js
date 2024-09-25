@@ -1,13 +1,19 @@
+
+
+
 const blogHtmlMove = document.getElementById("blogHtmlMove");
-blogHtmlMove.addEventListener("click", function () {
-  if (window.location.href.includes("index.html")) {
+const homeHtmlMove = document.getElementById("homeHtmlMove");
+if (blogHtmlMove) {
+  blogHtmlMove.addEventListener("click", function () {
     window.location.href = "vlog.html";
-  } else if (window.location.href.includes("vlog.html")) {
+  });
+}
+
+if (homeHtmlMove) {
+  homeHtmlMove.addEventListener("click", function () {
     window.location.href = "index.html";
-  } else if (window.location.href.includes("history.html")) {
-    window.location.href = "index.html";
-  }
-});
+  });
+}
 
 
 // Modal showing JavaScript

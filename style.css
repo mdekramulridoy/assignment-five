@@ -13,6 +13,7 @@ body {
 .blog-btn {
   background-color: rgb(180, 244, 97);
   border-radius: 8px;
+  /* cursor: pointer; */
   /* padding: 12px 32px 12px 32px; */
 }
 .up-header {
